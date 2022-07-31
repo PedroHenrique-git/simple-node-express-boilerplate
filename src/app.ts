@@ -5,6 +5,7 @@ import { exampleRouter } from './routes/example';
 
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan('combined'));
 app.use('/public', express.static(join(__dirname, 'public')));

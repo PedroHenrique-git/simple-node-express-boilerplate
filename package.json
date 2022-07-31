@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "rimraf dist && npx tsc --project tsconfig.build.json",
     "dev": "nodemon -r dotenv/config ./src/server.ts",
     "start": "node ./dist/server.js",
     "test": "jest --detectOpenHandles",
@@ -37,6 +37,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "supertest": "^6.2.4",
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
