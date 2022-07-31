@@ -8,6 +8,12 @@ describe('Test GET example route /', () => {
       .expect('Content-type', /json/)
       .expect(200);
 
-    expect(Array.isArray(body)).toBe(true);
+    expect(body).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          name: expect.any(String),
+        }),
+      ]),
+    );
   });
 });
