@@ -1,6 +1,6 @@
-# A simple express applications boilerplate
+## A simple express applications boilerplate
 
-# Installed modules
+### Installed modules
 
 - [Express](http://expressjs.com//)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -9,20 +9,20 @@
 - [Supertest](https://github.com/visionmedia/supertest#readme)
 - [Jest](https://jestjs.io/)
 
-# Install dependencies
+### Install dependencies
 $ npm i
 
-# Start in development mode
+### Start in development mode
 $ npm run dev
 
-# Build project
+### Build project
 $ npm run build
 
-# Start project from dist folder
+### Start project from dist folder
 $ npm run start
 
-# Run tests
+### Run tests
 $ npm run test
 
-# Start jest in watch mode
+### Start jest in watch mode
 $ npm run test:watch
