@@ -1,6 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
-import { join } from 'path';
+import { resolve } from 'path';
 import { exampleRouter } from './routes/example';
 
 const app = express();
@@ -8,7 +8,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(morgan('combined'));
-app.use('/public', express.static(join(__dirname, 'public')));
+app.use('/public', express.static(resolve(__dirname, '..', 'public')));
 
 app.use('/example', exampleRouter);
 
