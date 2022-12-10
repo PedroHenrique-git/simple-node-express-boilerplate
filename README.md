@@ -10,19 +10,19 @@
 - [Jest](https://jestjs.io/)
 
 ### Install dependencies
-``$ npm i``
+``npm i``
 
 ### Start in development mode
-$ npm run dev
+``npm run dev``
 
 ### Build project
-$ npm run build
+``npm run build``
 
 ### Start project from dist folder
-$ npm run start
+``npm run start``
 
 ### Run tests
-$ npm run test
+``npm run test``
 
 ### Start jest in watch mode
-$ npm run test:watch
+``npm run test:watch``
