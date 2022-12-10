@@ -10,7 +10,7 @@
 - [Jest](https://jestjs.io/)
 
 ### Install dependencies
-$ npm i
+``$ npm i``
 
 ### Start in development mode
 $ npm run dev
